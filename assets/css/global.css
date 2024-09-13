@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: minmax(13.625rem, 2fr) 8fr;
+    grid-template-rows: 3.5rem 1fr ;
+
+    grid-template-areas: 
+        "hearder hearder"
+        "sidebar main"
+    ;
+
+}
+
+header{
+    grid-area: hearder;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height: 3.5rem;
+}
+
+aside{
+    grid-area: sidebar;
+    padding-left: 2rem;
+}
+
+main{
+    grid-area: main;
+}
+

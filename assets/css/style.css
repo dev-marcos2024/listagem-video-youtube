@@ -1,0 +1,94 @@
+@import url(./global.css);
+
+/*!===================== HEARDER ===========================*/
+.hearder-container{
+    display: grid;
+    grid-template-columns: 9rem 1fr 8.125rem;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9.125rem;
+    height: 1.5rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25.25rem;
+    height: 2.5rem;
+}
+.center input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    padding: .5rem;
+    font-size: 1rem;
+}
+.center div{
+    width: 3.563rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCCCCC;
+    height: 100%;
+    cursor: pointer;
+}
+.center div:hover{
+    background-color: #cccccc65;
+}
+.rigth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8.125rem;
+    height: 2.125rem;
+}
+#avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/*!===================== MAIN ===========================*/
+.main{
+    background-color: rgb(241, 243, 245);
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4, 16rem);
+    grid-template-rows: repeat(3, 16rem);
+    justify-content: center;
+    padding-top: 1rem;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+/*!===================== SIDEBAR ===========================*/
+
+.sedebar-container{
+    display: grid;
+    grid-template-rows: repeat(10, 1.5rem);
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.sidebar-item{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.sidebar-item:hover{
+    color: rgb(255, 0, 0);
+}
